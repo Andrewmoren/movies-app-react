@@ -12,15 +12,9 @@ import Routess from "./config/Routess";
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes
-        render={(props) => (
-          <>
-            <Header {...props} />
-            <Routess />
-            <Footer />
-          </>
-        )}
-      />
+      <Header />
+      <Routess />
+      <Footer />
     </BrowserRouter>
   );
 };
